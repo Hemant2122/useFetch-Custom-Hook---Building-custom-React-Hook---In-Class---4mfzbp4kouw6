@@ -12,13 +12,13 @@ function Home() {
 
   return (
     <>
-      <div>
+      {loading && (<div>
         <h1>Products</h1>
         {/* {document.write(data)} */}
         <ul>
           {data && data.map((item) => <li key={item.id}>{item.title}</li>)}
         </ul>
-      </div>
+      </div>)}
     </>
   );
 }
